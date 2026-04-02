@@ -284,7 +284,8 @@ function setupMenu() {
     setTimeout(() => {
       window.location.href = href;
     }, 120);
-   });
+  });
+});
 
   window.addEventListener('resize', () => {
     if (window.innerWidth > 860) {

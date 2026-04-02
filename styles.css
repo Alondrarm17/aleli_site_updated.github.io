@@ -1129,19 +1129,3 @@ ol:last-child {
 }
 
 
-@media (max-width: 860px) {
-  .nav-link {
-    position: relative;
-    z-index: 110;
-    pointer-events: auto;
-  }
-
-  .nav-links {
-    position: relative;
-    z-index: 100;
-  }
-
-  .mobile-overlay {
-    z-index: 90;
-  }
-}

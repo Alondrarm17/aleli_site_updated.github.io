@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aleli Japa | Sobre mí</title>
+  <meta name="description" content="Conoce la historia de Aleli Japa, su evolución, su etapa postparto y su enfoque de entrenamiento." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="about">
+  <div class="site-shell">
+    <div class="popup hidden" id="entryPopup">
+      <div class="popup-card">
+        <h2 data-i18n="popupTitle">¡Felicidades por dar el primer paso!</h2>
+        <p data-i18n="popupText">Hoy comienzas algo más grande que un cambio físico: una nueva etapa para sentirte fuerte, segura y comprometida con tu bienestar.</p>
+        <button class="popup-btn" id="popupClose" data-i18n="popupButton">Continuar</button>
+      </div>
+    </div>
+
+    <div class="mobile-overlay hidden" id="mobileOverlay"></div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="logo"><span class="logo-main">ALELI</span><span class="logo-accent">JAPA</span></a>
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+        <nav class="nav" id="mainNav" aria-label="Menú principal">
+          <div class="nav-top">
+            <div class="nav-mobile-brand">Menú</div>
+            <button class="close-menu" id="closeMenu" aria-label="Cerrar menú">✕</button>
+          </div>
+          <div class="nav-links">
+            <a class="nav-link" data-page="home" href="index.html" data-i18n="navHome">Inicio</a>
+            <a class="nav-link" data-page="about" href="about.html" data-i18n="navAbout">Sobre mí</a>
+            <a class="nav-link" data-page="join" href="unete.html" data-i18n="navJoin">Únete</a>
+            <a class="nav-link" data-page="results" href="resultados.html" data-i18n="navResults">Resultados</a>
+          </div>
+          <div class="nav-actions"><button class="lang-toggle" aria-label="Cambiar idioma">EN</button></div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container about-layout">
+          <div class="about-visuals">
+            <div class="about-photo about-photo-main">
+              <img class="about-portrait" src="assets/_DSC6771.jpg" alt="Aleli Japa foto profesional" />
+            </div>
+            <div class="about-photo about-photo-before">
+              <img class="about-before" src="assets/d73ac12a-103b-49fd-951f-88e9c924dc5f.jpg" alt="Imagen del antes de Aleli Japa" />
+            </div>
+          </div>
+
+          <div class="about-content">
+            <div class="eyebrow" data-i18n="aboutEyebrow">Sobre Aleli</div>
+            <h1 class="section-title" data-i18n="aboutTitle">Una historia real de disciplina, evolución y bienestar</h1>
+            <p class="section-copy" data-i18n="aboutText">Aleli Japa comparte su proceso desde una etapa anterior hasta su versión actual, combinando entrenamiento, hábitos y constancia para ayudar a otras mujeres a lograr lo mismo.</p>
+
+            <article class="bio-card">
+              <h3 data-i18n="aboutBio1Title">Más que un cambio físico</h3>
+              <p data-i18n="aboutBio1Text">La meta es ayudarte a sentirte mejor contigo misma, crear disciplina y construir una rutina sostenible.</p>
+            </article>
+
+            <article class="bio-card">
+              <h3 data-i18n="aboutBio2Title">Su etapa actual</h3>
+              <p data-i18n="aboutBio2Text">Después de tener a su bebé, Aleli está trabajando en recuperar su forma física, su fuerza y su bienestar con un enfoque realista y constante.</p>
+            </article>
+
+            <article class="bio-card">
+              <h3 data-i18n="aboutBio3Title">Acompañamiento cercano</h3>
+              <p data-i18n="aboutBio3Text">La idea es que cada clienta se sienta acompañada, guiada y motivada durante todo el proceso.</p>
+            </article>
+
+            <div class="quote-block">
+              <p data-i18n="aboutQuote">“Quiero que otras mujeres vean que sí se puede empezar, retomar y transformarse con guía, disciplina y paciencia.”</p>
+              <span data-i18n="aboutQuoteBy">— Aleli Japa</span>
+            </div>
+
+            <div class="inline-actions" style="margin-top: 24px;">
+              <a class="primary-btn" href="unete.html" data-i18n="aboutButton">Ver cómo unirse</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <a href="index.html" class="logo"><span class="logo-main">ALELI</span><span class="logo-accent">JAPA</span></a>
+          <div class="footer-copy" data-i18n="footerCopy">Entrenadora personal certificada.</div>
+        </div>
+        <div class="footer-links">
+          <a href="https://www.instagram.com/aleli_japa?igsh=MzVoYW9jbWE4cDA0" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.tiktok.com/@aleli.japa?_r=1&_t=ZT-954RflXUhQM" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://wa.me/18492075776" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

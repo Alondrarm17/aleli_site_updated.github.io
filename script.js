@@ -1,7 +1,7 @@
 const translations = {
   es: {
     popupTitle: '¡Felicidades por dar el primer paso!',
-    popupText: 'Hoy comienzas algo más grande que un cambio físico: una nueva etapa para sentirte fuerte, segura y comprometida con tu bienestar.',
+    popupText: 'Hoy comienzas algo más grande que un cambio físico: una nueva etapa para sentirte fuerte, seguro y comprometido con tu bienestar.',
     popupButton: 'Continuar',
     navHome: 'Inicio',
     navAbout: 'Sobre mí',
@@ -9,8 +9,8 @@ const translations = {
     navResults: 'Resultados',
 
     heroEyebrow: 'Entrenamiento virtual',
-    heroTitle1: 'Programas online para transformar tu cuerpo y tu confianza',
-    heroText: 'Programas diseñados para mujeres que quieren resultados reales, acompañamiento cercano y una rutina que se adapte a su estilo de vida.',
+    heroTitle1: 'Entrenamiento en linea para transformar tu cuerpo y tu autoestima',
+    heroText: 'Programas diseñados para personas que quieren resultados reales, acompañamiento cercano y una rutina que se adapte a su estilo de vida.',
     heroPrimary: 'Ver planes',
     heroSecondary: 'Únete ahora',
 
@@ -123,7 +123,7 @@ const translations = {
     navResults: 'Results',
 
     heroEyebrow: 'Online coaching',
-    heroTitle1: 'Online programs to transform your body and confidence',
+    heroTitle1: 'Online coaching to transform your body and confidence',
     heroText: 'Programs designed for women who want real results, close support, and a routine that fits their lifestyle.',
     heroPrimary: 'View plans',
     heroSecondary: 'Join now',
@@ -274,8 +274,17 @@ function setupMenu() {
   if (overlay) overlay.addEventListener('click', closeMenu);
 
   document.querySelectorAll('.nav-link').forEach((link) => {
-    link.addEventListener('click', closeMenu);
-  });
+  link.addEventListener('click', (e) => {
+    const href = link.getAttribute('href');
+    if (!href || href === '#') return;
+
+    e.preventDefault();
+    closeMenu();
+
+    setTimeout(() => {
+      window.location.href = href;
+    }, 120);
+   });
 
   window.addEventListener('resize', () => {
     if (window.innerWidth > 860) {

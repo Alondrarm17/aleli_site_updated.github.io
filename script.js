@@ -274,22 +274,14 @@ function setupMenu() {
   if (overlay) overlay.addEventListener('click', closeMenu);
 
   document.querySelectorAll('.nav-link').forEach((link) => {
-  link.addEventListener('click', (e) => {
-    const href = link.getAttribute('href');
-    if (!href || href === '#') return;
-
-    e.preventDefault();
+  link.addEventListener('click', () => {
     closeMenu();
-
-    setTimeout(() => {
-      window.location.href = href;
-    }, 120);
+    });
   });
-});
 
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > 860) {
-      closeMenu();
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 860) {
+    closeMenu();
     }
   });
 }
